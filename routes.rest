@@ -3,8 +3,8 @@ POST http://localhost:3000/users/register
 Content-Type: application/json
 
 {
-    "name": "teste2",
-    "email": "teste2@teste.com",
+    "name": "teste3",
+    "email": "teste3@teste.com",
     "password": "123456"
 }
 ###
@@ -25,7 +25,7 @@ Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
 
 {
-    "title": "Titulo 3",
+    "title": "Titulo 8",
     "body": "Lorem Ipsum dolor"
 }
 ###
@@ -54,7 +54,7 @@ x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3R
 ###
 
 ### DELETE - Deleta a nota
-DELETE http://localhost:3000/notes/617b1660e9e2e88272b88689
+DELETE http://localhost:3000/notes/617b24f38b264763938c431e
 Content-Type: application/json
 x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
 ###
