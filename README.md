@@ -11,8 +11,8 @@ Algumas das principais tecnologias utilizadas neste projeto são:
 
 ### Pré-requisitos para executar o projeto
 
-1. [NodeJS] (https://nodejs.org/en/)
-2. [MongoDB Community Server] (https://www.mongodb.com/try/download/community)
+1. [NodeJS](https://nodejs.org/en/)
+2. [MongoDB Community Server](https://www.mongodb.com/try/download/community)
 
 ### Como rodar o projeto
 
