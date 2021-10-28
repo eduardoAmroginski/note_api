@@ -1,0 +1,66 @@
+### POST - Registro de usuário
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "name": "teste2",
+    "email": "teste2@teste.com",
+    "password": "123456"
+}
+###
+
+### POST - Login de usuário
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "teste@teste.com",
+    "password": "123456"
+}
+###
+
+### POST - Criar nova nota
+POST http://localhost:3000/notes
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+
+{
+    "title": "Titulo 3",
+    "body": "Lorem Ipsum dolor"
+}
+###
+
+### GET - busca nota por ID
+GET http://localhost:3000/notes/617b0d8ab0357bbc683e4320
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+###
+
+### GET - busca todas as nota do usuário
+GET http://localhost:3000/notes
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+###
+
+### PUT - Atualiza nota
+PUT http://localhost:3000/notes/617b0d8ab0357bbc683e4320
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+
+{
+    "title": "Titulo 1",
+    "body": "Lorem Ipsum dolor"
+}
+###
+
+### DELETE - Deleta a nota
+DELETE http://localhost:3000/notes/617b1660e9e2e88272b88689
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+###
+
+### GET - busca todas as nota do usuário
+GET http://localhost:3000/notes/search?query=titulo
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RlQHRlc3RlLmNvbSIsImlhdCI6MTYzNTQ1MzcyMCwiZXhwIjoxNjM1NzEyOTIwfQ.xQNp1TLHhaSU-f6kha3KFq6hlQmyEY3UqFu7KfqQ3dg
+###
