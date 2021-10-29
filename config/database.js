@@ -1,8 +1,10 @@
 const mongoose = require("mongoose");
 mongoose.Promise = global.Promise;
 
+const uri = process.env.MONGODB_URI || "mongodb://localhost/javascriptNote";
+
 mongoose
-  .connect("mongodb://localhost/javascriptNote", {
+  .connect(uri, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })

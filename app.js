@@ -5,6 +5,8 @@ var cors = require("cors");
 var compression = require("compression");
 var helmet = require("helmet");
 
+const PORT = process.env.PORT || 3400;
+
 require("./config/database");
 
 var usersRouter = require("./app/routes/users");
@@ -22,5 +24,9 @@ app.use(cors());
 
 app.use("/users", usersRouter);
 app.use("/notes", notesRouter);
+
+app.listen(PORT, () => {
+  console.log("Server is Running");
+});
 
 module.exports = app;
